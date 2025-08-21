@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "Submitted Claims";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Claim ID</th>
+            <th>Lecturer</th>
+            <th>Date Submitted</th>
+            <th>Total Hours</th>
+            <th>Total Amount</th>
+            <th>Status</th>
+            <th>Comment</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Dummy claim data -->
+        <tr>
+            <td>CLM001</td>
+            <td>Jane Doe</td>
+            <td>2025-08-15</td>
+            <td>12</td>
+            <td>R4800.00</td>
+            <td><span class="badge bg-warning text-dark">Pending</span></td>
+            <td><textarea class="form-control" rows="2" placeholder="Add comment..."></textarea></td>
+            <td>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-sm btn-success">Approve</button>
+                    <button class="btn btn-sm btn-danger">Reject</button>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>CLM002</td>
+            <td>John Smith</td>
+            <td>2025-08-17</td>
+            <td>8</td>
+            <td>R3200.00</td>
+            <td><span class="badge bg-success">Approved</span></td>
+            <td>Reviewed and approved.</td>
+            <td>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-sm btn-secondary" disabled>Approved</button>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,64 @@
+﻿@{
+    ViewBag.Title = "Submit New Claim";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Submit New Contract Claim</h2>
+
+<form method="post" action="/Lecturer/SubmitClaim" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label for="claimId" class="form-label">Claim ID</label>
+        <input type="text" class="form-control" id="claimId" name="ClaimID" placeholder="Enter Claim ID" required />
+    </div>
+
+    <div class="mb-3">
+        <label for="contractType" class="form-label">Contract Type</label>
+        <select class="form-select" id="contractType" name="ContractType" required>
+            <option value="" disabled selected>Select contract type</option>
+            <option value="Full-Time">Full-Time</option>
+            <option value="Part-Time">Part-Time</option>
+            <option value="Hourly">Hourly</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label for="hoursWorked" class="form-label">Total Hours Worked</label>
+        <input type="number" class="form-control" id="hoursWorked" name="TotalHours" min="0" step="0.1" placeholder="Enter total hours" required />
+    </div>
+
+    <div class="mb-3">
+        <label for="rate" class="form-label">Rate per Hour (ZAR)</label>
+        <input type="number" class="form-control" id="rate" name="RatePerHour" min="0" step="0.01" placeholder="Enter hourly rate" required />
+    </div>
+
+    <div class="mb-3">
+        <label for="totalAmount" class="form-label">Total Amount (ZAR)</label>
+        <input type="number" class="form-control" id="totalAmount" name="TotalAmount" readonly />
+    </div>
+
+    <div class="mb-3">
+        <label for="claimDate" class="form-label">Date of Claim</label>
+        <input type="date" class="form-control" id="claimDate" name="DateSubmitted" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit Claim</button>
+    <a href="/Lecturer/Dashboard" class="btn btn-secondary ms-2">Cancel</a>
+</form>
+
+@section Scripts {
+    <script>
+        // Calculate total amount on input change
+        const hoursInput = document.getElementById('hoursWorked');
+        const rateInput = document.getElementById('rate');
+        const totalAmountInput = document.getElementById('totalAmount');
+
+        function calculateTotal() {
+            const hours = parseFloat(hoursInput.value) || 0;
+            const rate = parseFloat(rateInput.value) || 0;
+            totalAmountInput.value = (hours * rate).toFixed(2);
+        }
+
+        hoursInput.addEventListener('input', calculateTotal);
+        rateInput.addEventListener('input', calculateTotal);
+    </script>
+}

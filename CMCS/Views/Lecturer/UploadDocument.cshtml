@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Upload Document";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Upload Contract Claim Document</h2>
+
+<form method="post" action="/Lecturer/UploadDocument" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label for="claimId" class="form-label">Claim ID</label>
+        <input type="text" class="form-control" id="claimId" name="ClaimID" placeholder="Enter Claim ID" required />
+    </div>
+
+    <div class="mb-3">
+        <label for="fileUpload" class="form-label">Select Document to Upload</label>
+        <input class="form-control" type="file" id="fileUpload" name="ClaimDocument" accept=".pdf,.doc,.docx,.jpg,.png" required />
+        <div class="form-text">Allowed formats: PDF, Word, JPG, PNG</div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Upload Document</button>
+    <a href="/Lecturer/Dashboard" class="btn btn-secondary ms-2">Cancel</a>
+</form>

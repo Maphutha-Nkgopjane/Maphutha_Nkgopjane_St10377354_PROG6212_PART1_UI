@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "Manager – View and Approve Claims";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Manager – View and Approve Claims</h2>
+
+<table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Claim ID</th>
+            <th>Lecturer</th>
+            <th>Date Submitted</th>
+            <th>Total Hours</th>
+            <th>Total Amount</th>
+            <th>Status</th>
+            <th>Coordinator Comment</th>
+            <th>Manager Comment</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Dummy Claim 1 -->
+        <tr>
+            <td>CLM101</td>
+            <td>Jane Doe</td>
+            <td>2025-08-15</td>
+            <td>10</td>
+            <td>R4000.00</td>
+            <td><span class="badge bg-warning text-dark">Pending</span></td>
+            <td>Awaiting final review</td>
+            <td>
+                <textarea class="form-control" rows="2" placeholder="Manager comment..."></textarea>
+            </td>
+            <td>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-sm btn-success">Approve</button>
+                    <button class="btn btn-sm btn-danger">Reject</button>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Dummy Claim 2 -->
+        <tr>
+            <td>CLM102</td>
+            <td>John Smith</td>
+            <td>2025-08-17</td>
+            <td>8</td>
+            <td>R3200.00</td>
+            <td><span class="badge bg-success">Approved</span></td>
+            <td>All clear</td>
+            <td>Approved by manager</td>
+            <td>
+                <button class="btn btn-sm btn-secondary" disabled>Approved</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

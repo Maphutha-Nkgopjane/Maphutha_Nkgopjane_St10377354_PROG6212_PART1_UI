@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Lecturer Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Welcome, [Lecturer Name]</h2>
+
+<div class="d-grid gap-2">
+    <a href="/Lecturer/SubmitClaim" class="btn btn-primary">Submit New Claim</a>
+    <a href="/Lecturer/UploadDocument" class="btn btn-secondary">Upload Document</a>
+</div>
+
+<hr />
+
+<h4>Your Submitted Claims</h4>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Claim ID</th>
+            <th>Date</th>
+            <th>Hours</th>
+            <th>Total</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>CLM001</td>
+            <td>2025-08-01</td>
+            <td>10</td>
+            <td>R4000</td>
+            <td><span class="badge bg-warning">Pending</span></td>
+        </tr>
+    </tbody>
+</table>
