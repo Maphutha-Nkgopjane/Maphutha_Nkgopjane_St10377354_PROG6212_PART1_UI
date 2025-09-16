@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2Ovj0IQj5Jo=",
+  "dgSpecHash": "bP7ifdOJMo8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\lab_services_student\\Desktop\\PROG6221_POE_PART2\\CMCS\\CMCS.csproj",
+  "projectFilePath": "C:\\Users\\lab_services_student\\Desktop\\Maphutha_Nkgopjane_St10377354_PROG6212_PART1_UI\\CMCS\\CMCS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lab_services_student\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\lab_services_student\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

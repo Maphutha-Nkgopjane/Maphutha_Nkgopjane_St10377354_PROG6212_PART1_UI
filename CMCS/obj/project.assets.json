@@ -5171,11 +5171,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lab_services_student\\Desktop\\PROG6221_POE_PART2\\CMCS\\CMCS.csproj",
+      "projectUniqueName": "C:\\Users\\lab_services_student\\Desktop\\Maphutha_Nkgopjane_St10377354_PROG6212_PART1_UI\\CMCS\\CMCS.csproj",
       "projectName": "CMCS",
-      "projectPath": "C:\\Users\\lab_services_student\\Desktop\\PROG6221_POE_PART2\\CMCS\\CMCS.csproj",
+      "projectPath": "C:\\Users\\lab_services_student\\Desktop\\Maphutha_Nkgopjane_St10377354_PROG6212_PART1_UI\\CMCS\\CMCS.csproj",
       "packagesPath": "C:\\Users\\lab_services_student\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lab_services_student\\Desktop\\PROG6221_POE_PART2\\CMCS\\obj\\",
+      "outputPath": "C:\\Users\\lab_services_student\\Desktop\\Maphutha_Nkgopjane_St10377354_PROG6212_PART1_UI\\CMCS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
